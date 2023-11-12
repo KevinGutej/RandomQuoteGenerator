@@ -39,3 +39,36 @@ $quotes = [
 
 
 $randomQuote = $quotes[array_rand($quotes)];
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random quote generator</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: black;
+            padding: 50px;
+        }
+
+        .quote-box {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="quote-box">
+        <p><?php echo $randomQuote; ?></p>
+    </div>
+</body>
+
+</html>
